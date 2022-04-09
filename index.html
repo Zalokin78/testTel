@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <div class="title">
+      
+    <input
+      type="tel"
+      class = "digits"
+      id="digit0"
+      maxlength="2"
+      min = "0"
+      max = "99"
+      size="1"
+      placeholder="00"
+      onkeydown="return keydown(event)"
+      oninput="return input(event)"
+      onkeyup="keyup()"   
+    />
+    <input
+      class = "digits"
+      type="tel"
+      maxlength="2"
+      min = "0"
+      max = "99"
+      size="1"
+      name="inputName"
+      id="digit1"
+      placeholder="00"      
+      onkeydown="return keydown(event)"
+      oninput="return input(event)"
+      onkeyup="keyup()" 
+    />
+    
+
+    <input
+    class = "digits"
+      id="digit2"
+      type="tel"
+      min = "0"
+      max = "99"
+      placeholder="00"
+      maxlength="2"
+      size="1"      
+      onkeydown="return keydown(event)"
+      oninput="return input(event)"
+      onkeyup="keyup()" 
+    />
+
+    <P></P>
+
+    <input
+  class="limitDigits"
+  id="limit"
+  type="text"
+  placeholder="00"
+  maxlength="2"
+  size="1"
+  oninput="limiter(this)"
+  onkeyup="keyup()" 
+/>
+
+
+    <!-- <div class="titleNew">CLOCK</div> -->
+    <!-- <div class = "wrapper"> -->
+    
+    
+    <!-- </div> -->
+  </body>
+  <script src="limitDigitTest.js"></script>
+</html>
